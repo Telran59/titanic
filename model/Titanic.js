@@ -9,7 +9,7 @@ export class Titanic {
 
     async _processLines(process) {
         const reader = readline.createInterface({
-            input: fs.createReadStream('./train.csv', 'utf8'),
+            input: fs.createReadStream(this.src, 'utf8'),
             crlfDelay: Infinity
         });
         let isFirstLine = true;
